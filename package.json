@@ -9,12 +9,13 @@
     "README.md"
   ],
   "scripts": {
-    "start": "vite",
-    "build": "vite build",
-    "serve": "vite preview",
-    "test": "npx uvu test"
+    "start": "npm run storybook",
+    "test": "npx uvu test",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "c8": "^7.11.0",
     "murmurhash": "^2.0.0",
     "stylis": "^4.0.10"
   },
@@ -24,13 +25,18 @@
     "styled-components": "*"
   },
   "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@storybook/addon-essentials": "^6.5.0-alpha.17",
+    "@storybook/react": "^6.5.0-alpha.17",
     "@testing-library/react": "^12.1.2",
     "@vitejs/plugin-react": "^1.0.0",
     "assertmatches": "file:../assertMatches/assertmatches-1.0.0.tgz",
+    "babel-loader": "^8.2.3",
     "esm": "^3.2.25",
     "linkedom": "^0.13.0",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
+    "storybook-builder-vite": "^0.1.13",
     "styled-components": "^5.3.3",
     "uvu": "^0.5.2",
     "vite": "^2.6.14"
