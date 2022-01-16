@@ -15,7 +15,6 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "c8": "^7.11.0",
     "murmurhash": "^2.0.0",
     "stylis": "^4.0.10"
   },
@@ -30,8 +29,9 @@
     "@storybook/react": "^6.5.0-alpha.17",
     "@testing-library/react": "^12.1.2",
     "@vitejs/plugin-react": "^1.0.0",
-    "assertmatches": "file:../assertMatches/assertmatches-1.0.0.tgz",
+    "assertmatches": "git://github.com/mpech/assertmatches",
     "babel-loader": "^8.2.3",
+    "c8": "^7.11.0",
     "esm": "^3.2.25",
     "linkedom": "^0.13.0",
     "react": "^17.0.0",
